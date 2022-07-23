@@ -38,13 +38,13 @@ namespace WinLaunch
                         SBM.StopMoveMode();
 
                         //want items? message
-                        if (EmptySBText.Visibility != System.Windows.Visibility.Visible)
-                            EmptySBText.Visibility = System.Windows.Visibility.Visible;
+                        //if (EmptySBText.Visibility != System.Windows.Visibility.Visible)
+                        //    EmptySBText.Visibility = System.Windows.Visibility.Visible;
                     }
                     else
                     {
-                        if (EmptySBText.Visibility != System.Windows.Visibility.Hidden)
-                            EmptySBText.Visibility = System.Windows.Visibility.Hidden;
+                        //if (EmptySBText.Visibility != System.Windows.Visibility.Hidden)
+                        //    EmptySBText.Visibility = System.Windows.Visibility.Hidden;
                     }
                 }
 

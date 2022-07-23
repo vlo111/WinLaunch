@@ -800,7 +800,7 @@ namespace WinLaunch
                 //    }
                 //}
 
-                miAddFile_Clicked(this, null);
+                // miAddFile_Clicked(this, null);
             }
 
             SBM.KeyDown(sender, e);

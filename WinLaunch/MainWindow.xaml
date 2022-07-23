@@ -451,7 +451,7 @@
             </TextBlock.Effect>
         </TextBlock>
 
-        <TextBlock x:Name="EmptySBText"
+        <!--<TextBlock x:Name="EmptySBText"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    FontFamily="res/Fonts/#Lucida Grande Bold"
@@ -462,7 +462,7 @@
             <TextBlock.Effect>
                 <DropShadowEffect BlurRadius="2" Direction="270" ShadowDepth="1" Color="Black" />
             </TextBlock.Effect>
-        </TextBlock>
+        </TextBlock>-->
 
         <StackPanel x:Name="PageCounter"
                     Margin="0,0,0,45"
