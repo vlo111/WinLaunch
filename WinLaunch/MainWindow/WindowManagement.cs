@@ -397,8 +397,8 @@ namespace WinLaunch
 
         public void ToggleLaunchpad()
         {
-            if (MainContextMenu.IsLoaded)
-                return;
+            //if (MainContextMenu.IsLoaded)
+            //    return;
 
             if (extensionBarVisible)
             {

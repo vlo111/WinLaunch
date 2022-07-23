@@ -22,9 +22,9 @@
                 <ResourceDictionary>
                     <DataTemplate DataType="{x:Type my:SBItem}">
                         <Grid ContextMenuOpening="Grid_ContextMenuOpening" IsEnabled="{Binding IsEnabled}">
-                            <Grid.Clip>
+                            <!--<Grid.Clip>
                                 <RectangleGeometry Rect="{Binding ClipRectangle}" />
-                            </Grid.Clip>
+                            </Grid.Clip>-->
 
                             <Grid.RenderTransform>
                                 <TransformGroup>
@@ -33,7 +33,7 @@
                                 </TransformGroup>
                             </Grid.RenderTransform>
 
-                            <Grid.ContextMenu>
+                            <!--<Grid.ContextMenu>
                                 <ContextMenu Width="200" Style="{StaticResource DarkContextMenu}">
                                     <MenuItem x:Name="miOpen" Click="miOpen_Click" Header="{my:Loc Open}">
                                         <MenuItem.Icon>
@@ -62,7 +62,7 @@
                                         </MenuItem.Icon>
                                     </MenuItem>
                                 </ContextMenu>
-                            </Grid.ContextMenu>
+                            </Grid.ContextMenu>-->
 
                             <Grid>
                                 <Grid.CacheMode>
@@ -152,7 +152,7 @@
     </Window.Resources>
 
     <Grid>
-        <Grid.ContextMenu>
+        <!--<Grid.ContextMenu>
             <ContextMenu x:Name="MainContextMenu" Width="200" Style="{StaticResource DarkContextMenu}">
                 <MenuItem Click="miAddFile_Clicked" Header="{my:Loc AddFile}">
                     <MenuItem.Icon>
@@ -195,7 +195,7 @@
                 </MenuItem>
 
             </ContextMenu>
-        </Grid.ContextMenu>
+        </Grid.ContextMenu>-->
         <!--  Background  -->
         <Grid x:Name="BGGrid" Visibility="Visible">
             <Image x:Name="Wallpaperbottom" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Fill" />

@@ -301,9 +301,11 @@ namespace WinLaunch
 
             //Init DPI Scaling
             MiscUtils.GetDPIScale();
-
             //setup appdata directory
-            string appData = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "WinLaunch");
+            //string appData = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "WinLaunch");
+            // bin/debug
+            string appData = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "WinLaunch");
+
             if (!System.IO.Directory.Exists(appData))
             {
                 System.IO.Directory.CreateDirectory(appData);
