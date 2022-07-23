@@ -490,6 +490,7 @@
             <Image x:Name="ExtensionsToggle"
                    Width="35"
                    Height="35"
+                   MouseDown="ExtensionsToggle_MouseDown"
                    RenderOptions.BitmapScalingMode="HighQuality"
                    Source="{Binding theme.ExtensionsToggle}">
                 <Image.RenderTransform>

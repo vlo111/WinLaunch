@@ -12,7 +12,20 @@ namespace WinLaunch
     {
         private void ExtensionsToggle_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            ToggleToolbar();
+            if(!extensionBarVisible)
+            {
+                Password dialog = new Password();
+                dialog.Owner = this;
+
+                if ((bool)dialog.ShowDialog())
+                {
+                    ToggleToolbar();
+                }
+            } else
+            {
+                ToggleToolbar();
+            }
+
         }
 
         private bool EditExtensionActive = false;
