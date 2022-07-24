@@ -14,7 +14,7 @@ namespace WinLaunch
         [System.Xml.Serialization.XmlIgnore]
         public Version version = null;
 
-        public static string CurrentSettingsPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "WinLaunch/Settings.xml");
+        public static string CurrentSettingsPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "WinLaunch/Settings.xml");
 
         /// <summary>
         /// version information used to determine if the version changed (updates)

@@ -684,7 +684,7 @@ namespace WinLaunch
                     //cache lnk files
                     if (Extension == ".lnk")
                     {
-                        string cacheDir = System.IO.Path.Combine(new string[] { Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "WinLaunch", "LinkCache" });
+                        string cacheDir = System.IO.Path.Combine(new string[] { AppDomain.CurrentDomain.BaseDirectory, "WinLaunch", "LinkCache" });
 
                         if (!Directory.Exists(cacheDir))
                         {

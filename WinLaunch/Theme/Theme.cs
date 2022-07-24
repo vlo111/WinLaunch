@@ -10,7 +10,7 @@ namespace WinLaunch
 {
     public class Theme
     {
-        public static string CurrentThemePath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "WinLaunch/CurrentTheme");
+        public static string CurrentThemePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "WinLaunch/CurrentTheme");
         public static Theme CurrentTheme = null;
 
         #region Bitmaps

@@ -228,6 +228,9 @@
     <Compile Include="Springboard\Folders.cs" />
     <Compile Include="Springboard\SpringboardManager.cs" />
     <Compile Include="Utils\Utils.cs" />
+    <Compile Include="Windows\Password.xaml.cs">
+      <DependentUpon>Password.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Welcome.xaml.cs">
       <DependentUpon>Welcome.xaml</DependentUpon>
     </Compile>
@@ -275,6 +278,10 @@
     <Page Include="Windows\EditItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Password.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Windows\Welcome.xaml">
       <SubType>Designer</SubType>

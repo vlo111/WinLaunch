@@ -25,7 +25,6 @@ namespace WinLaunch
             {
                 ToggleToolbar();
             }
-
         }
 
         private bool EditExtensionActive = false;

@@ -443,7 +443,7 @@ namespace WinLaunch
         #region Backup and Restore
         private void btnSaveBackup_Click(object sender, RoutedEventArgs e)
         {
-            string settingsDir = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "WinLaunch");
+            string settingsDir = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "WinLaunch");
 
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.Filter = "WinLaunch Backup|*.WLbackup";
@@ -476,7 +476,7 @@ namespace WinLaunch
 
         private void btnLoadBackup_Click(object sender, RoutedEventArgs e)
         {
-            string settingsDir = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "WinLaunch");
+            string settingsDir = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "WinLaunch");
 
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "WinLaunch Backup|*.WLbackup";
